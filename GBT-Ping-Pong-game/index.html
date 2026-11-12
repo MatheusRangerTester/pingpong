@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pong Game</title>
+
+    <style>
+        body {
+            background: #111827;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        canvas {
+            background: black;
+            border: 3px solid white;
+            display: block;
+            margin: 20px auto;
+            max-width: 95%;
+        }
+
+        button {
+            padding: 10px 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🏓 My Pong Game</h1>
+
+    <h2 id="score">0 : 0</h2>
+
+    <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+    <p>Player 1: W / S</p>
+    <p>Player 2: Arrow Up / Arrow Down</p>
+
+    <button onclick="restartGame()">Restart Game</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
